@@ -21,39 +21,9 @@ Clone o repositório
 git clone <link_do_repositório>
 ```
 
-Crie uma venv
+Execute o docker compose
 ```shell
-# Linux
-python3 -m venv .venv
-
-# Windows
-python -m venv .venv
-```
-
-Ative a venv
-```shell
-# Linux
-source .venv/bin/activate
-
-# Windows (Powershell)
-.venv\Scripts\Activate.ps1
-```
-
-Instale as dependências
-```shell
-pip install -r requirements.txt
-```
-
-Faça as migrações
-```shell
-python manage.py makemigrations
-
-python manage.py migrate
-```
-
-Inicie o servidor local
-```shell
-python manage.py runserver
+docker compose up
 ```
 
 ## Execução
@@ -109,5 +79,9 @@ Telefone
 
 
 ## Referências
+### Tecnologias
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [Django](https://docs.djangoproject.com/en/5.2/)
+### Configuração do docker-compose
+- [Artigo 1](https://dev.to/francescoxx/python-crud-rest-api-using-django-postgres-docker-and-docker-compose-4nhe)
+- [Artigo 2](https://www.docker.com/blog/how-to-dockerize-django-app/)
